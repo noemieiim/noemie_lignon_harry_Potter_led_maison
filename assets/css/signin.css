@@ -1,0 +1,56 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #222;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Harry Potter", cursive;
+  color: #800000; /* Rouge Gryffondor */
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #800000; /* Rouge Gryffondor */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #800000; /* Rouge Gryffondor */
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2a623d; /* Vert Serpentard */
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Harry Potter", cursive;
+}
+
+button:hover {
+  background-color: #1a3a24; /* Vert plus sombre Serpentard */
+}

@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+  }
+/* Modification de la taille du logo */
+
+.logo {
+    height: 70px;
+  }
+  
+  /* On aligne le logo avec la navigation */
+  
+  header {
+    display: flex; /* On utilise flexbox pour aligner */
+    align-items: center; /* On aligne verticalement */
+    justify-content: space-between; /* On aligne horizontalement */
+    height: 100px; /* On définit une hauteur */
+    padding: 20px; /* On ajoute un peu de marge */
+  }
+  
+  .menu-navigation {
+    flex: 1; /* On prend tout l'espace disponible */
+    font-size: 16px; /* On agrandit un peu le texte */
+    background-color: orange; /* On change la couleur de fond */
+    display: flex; /* On utilise flexbox pour aligner */
+    justify-content: space-between; /* On aligne horizontalement */
+    list-style-type: none; /* On enlève les puces */
+    transition: left 0.5s; /* On ajoute une transition pour lorsqu'on change la propriété left ce soit smooth */
+  }
+  
+  a {
+    text-decoration: none; /* On enlève le souligné des liens */
+    color: gray;
+  }
+  
+  li {
+    color: white;
+  }
+  
+  #icons {
+    display: none; /* On cache le menu burger */
+    font-size: 30px; /* On agrandit l'icône */
+    color: white;
+    cursor: pointer; /* On ajoute un curseur pointer pour indiquer que c'est cliquable */
+  }
+  
+  #icons:before {
+    content: "\2630"; /* On ajoute le symbole burger */
+    color: white;
+  }
+  
+  /* Lorsque l'écran devient plus petit ... */
+  
+  @media (max-width: 650px) {
+    .menu-navigation {
+      position: fixed; /* On fixe le menu en haut de l'écran */
+      top: 0; /* On le place tout en haut */
+      left: -100%; /* On le cache à gauche */
+      width: 100%; /* On lui donne une largeur de 100% */
+      height: 300px;
+      flex-direction: column; /* On change la direction de flexbox pour aligner verticalement */
+      align-items: center; /* On aligne verticalement */
+      background-color: rgba(0, 0, 0, 0.9);
+      padding-top: 60px;
+    }
+  
+    /* On ajoute une classe active pour afficher le menu, la classe est donnée via le JS */
+  
+    .active {
+      left: -10%; /* On affiche le menu */
+    }
+  
+    #icons {
+      display: block;
+    }
+  }
+  /* Réinitialisation de base pour une uniformité entre les navigateurs */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+

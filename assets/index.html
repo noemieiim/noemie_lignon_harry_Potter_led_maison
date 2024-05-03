@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/details.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/personnage.css" />
+    <script src="js/header.js"></script>
+    <title>Harry Potter</title>
+  </head>
+  <body>
+    <!--mettre le contenu avec un slider-->
+    <header>
+      <a href="#">
+        <img
+          src="img/harry-potter-logo.jpg"
+          alt="harry-potter-logo"
+          class="logo"
+      /></a>
+      <ul class="menu-navigation">
+        <li>
+          <a href="#">Accueil</a>
+        </li>
+        <li>
+          <a href="details.html">Détail</a>
+        </li>
+        <li>
+          <a href="signin.html">signin</a>
+        </li>
+      </ul>
+      <div id="icons"></div>
+      <!--ici on met notre navigation avec notre darkmod -->
+    </header>
+    <div id="personnage-container">
+      <div id="personnage-template" class="personnage" style="display: none">
+        <img
+          src="https://hp-api.lainocs.fr/images/harry-potter.png"
+          alt="garry-potter"
+          class="personnage-img"
+        />
+        <h2 class="personnage-name">Harry Potter</h2>
+        <p class="personnage-description">Gryffindor</p>
+        <a class="personnage-details-link" href="details.html?id="
+          >Voir les détails</a
+        >
+      </div>
+    </div>
+
+    <div class="pagination">
+      <button id="prev">Précédent</button>
+      <span id="current-page">1</span>
+      <button id="next">Suivant</button>
+    </div>
+
+    <main>
+      <!--ici on va mettre notre composnat pour ouvrir notre booster-->
+      <div class="booster-container"></div>
+
+      <div class="cards-container"></div>
+    </main>
+  </body>
+</html>
